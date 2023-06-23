@@ -14,6 +14,8 @@ import requests
 
 load_dotenv()
 
+openai.api_key = os.getenv("OPENAI_API_KEY")
+
 from langchain.chains import VectorDBQA
 
 def download_pdf():
